@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--link for bulma css framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/styles.css" />
-    <title>ActorPedia</title>
+    <title>MoviePedia</title>
 </head>
 <body>
     <header>
-        <h1>ActorPedia</h1>
+        <h1>MoviePedia</h1>
     </header>
 
     <section>
-        <input type="text" placeholder="enter actor name">
-        <button>ENTER</button>
+        <input id="input-box" type="text" placeholder="search movies">
+        <button id="button-enter">ENTER</button>
         <!-- <p id="demo"></p>     -->
     </section>
     <aside>
@@ -26,6 +27,7 @@
             which movies and shows you have been missing out on of your favorite actor.
         </p>
     </aside>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
