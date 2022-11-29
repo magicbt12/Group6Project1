@@ -11,10 +11,3 @@ function getTitle() {
     testQuery = inputBoxEl;
     console.log(testQuery)
     fetch(apiSearch + "?api_key=" + apiKey + "&query=" + testQuery)
-    .then(function (res) {
-        console.log(res)
-        return res.json()
-    })
-}
-getTitle()
-// TODO
