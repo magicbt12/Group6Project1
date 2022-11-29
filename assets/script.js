@@ -5,11 +5,16 @@ var apiSearch = apiUrl + "/search/movie";
 var testQuery = "";
 var buttonEl = document.getElementById("button-enter");
 
-buttonEl.addEventListener("click", getTitle);
 
 function getTitle() { 
     var inputBoxEl = document.getElementById("input-box").value;
     testQuery = inputBoxEl;
     console.log(testQuery)
     fetch(apiSearch + "?api_key=" + apiKey + "&query=" + testQuery)
+    .then(function (res) {
+        console.log(res)
+        return res.json()
+    })
 }
+getTitle()
+// TODO
