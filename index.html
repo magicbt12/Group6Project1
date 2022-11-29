@@ -10,24 +10,30 @@
     <title>MoviePedia</title>
 </head>
 <body>
-    <header>
-        <h1>MoviePedia</h1>
-    </header>
+    <section class="user">
+        <h1 class="title is-size-1 has-text-centered" id="title">MoviePedia</h1>
+        <div class="wrapper">
+            <p class="typing-demo">
+                Find your favorite movies!
+            </p>
+        </div>
+        <br />
 
-    <section>
-        <input id="input-box" type="text" placeholder="search movies">
-        <button id="button-enter">ENTER</button>
-        <!-- <p id="demo"></p>     -->
+            <form autocomplete="off" id="search-form">
+                <div class="autocomplete">
+                    <input id="movie-input" class="input" type="text" name="movie" placeholder="Search movies and TV shows" /><br/>
+                    <button class="button glow-button" type="submit">SEARCH</button>
+                </div>
+            </form> 
     </section>
-    <aside>
-        <h2>Discover all movies/shows of your favorite actors!</h2>
-        <p>Search for any of your favorite actors. 
-           Review and preview your favorite actor's movies and shows.
-           Just one click, type in the person's name and discover 
-            which movies and shows you have been missing out on of your favorite actor.
-        </p>
-    </aside>
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Copyright 2022 MoviePedia</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
